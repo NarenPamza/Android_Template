@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<qualifiedTypeNameHistroy>
+<fullyQualifiedTypeName name="android.view.View"/>
+<fullyQualifiedTypeName name="com.androidParty.lastnightparty.MainActivity"/>
+<fullyQualifiedTypeName name="android.content.Intent"/>
+<fullyQualifiedTypeName name="com.androidParty.lastnightparty.SignInActivity"/>
+<fullyQualifiedTypeName name="com.androidParty.lastnightparty.CreateNewAccountActivity"/>
+<fullyQualifiedTypeName name="com.androidParty.lastnightparty.R.string"/>
+</qualifiedTypeNameHistroy>
