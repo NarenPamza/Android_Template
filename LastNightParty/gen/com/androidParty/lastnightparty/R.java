@@ -26,26 +26,29 @@ public final class R {
         public static final int party_night=0x7f020001;
     }
     public static final class id {
-        public static final int action_settings=0x7f080009;
+        public static final int action_settings=0x7f08000a;
         public static final int button2=0x7f080005;
         public static final int create_acc=0x7f080003;
         public static final int email_address=0x7f080000;
         public static final int first_name=0x7f080004;
         public static final int lastNight=0x7f080006;
         public static final int last_name=0x7f080001;
+        public static final int map=0x7f080007;
         public static final int new_account_pwd=0x7f080002;
-        public static final int password=0x7f080008;
-        public static final int user_name=0x7f080007;
+        public static final int password=0x7f080009;
+        public static final int user_name=0x7f080008;
     }
     public static final class layout {
         public static final int activity_create_new_account=0x7f030000;
         public static final int activity_main=0x7f030001;
-        public static final int activity_sign_in=0x7f030002;
+        public static final int activity_map=0x7f030002;
+        public static final int activity_sign_in=0x7f030003;
     }
     public static final class menu {
         public static final int create_new_account=0x7f070000;
         public static final int main=0x7f070001;
-        public static final int sign_in=0x7f070002;
+        public static final int map=0x7f070002;
+        public static final int sign_in=0x7f070003;
     }
     public static final class string {
         public static final int Sign_In_Button=0x7f050007;
@@ -60,6 +63,7 @@ public final class R {
         public static final int password=0x7f050009;
         public static final int sign_in=0x7f050004;
         public static final int title_activity_create_new_account=0x7f050005;
+        public static final int title_activity_map=0x7f05000e;
         public static final int title_activity_sign_in=0x7f050006;
         public static final int user_name=0x7f050008;
     }

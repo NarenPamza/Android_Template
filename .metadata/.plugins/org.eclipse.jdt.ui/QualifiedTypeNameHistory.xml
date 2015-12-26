@@ -6,4 +6,9 @@
 <fullyQualifiedTypeName name="com.androidParty.lastnightparty.SignInActivity"/>
 <fullyQualifiedTypeName name="com.androidParty.lastnightparty.CreateNewAccountActivity"/>
 <fullyQualifiedTypeName name="com.androidParty.lastnightparty.R.string"/>
+<fullyQualifiedTypeName name="com.androidParty.lastnightparty.R.id"/>
+<fullyQualifiedTypeName name="android.widget.EditText"/>
+<fullyQualifiedTypeName name="com.androidParty.lastnightparty.StringUtilities"/>
+<fullyQualifiedTypeName name="android.app.Activity"/>
+<fullyQualifiedTypeName name="com.androidParty.lastnightparty.MapActivity"/>
 </qualifiedTypeNameHistroy>

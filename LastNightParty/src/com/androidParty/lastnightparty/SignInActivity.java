@@ -1,6 +1,7 @@
 package com.androidParty.lastnightparty;
 
 import android.app.Activity;
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
@@ -44,6 +45,9 @@ public class SignInActivity extends Activity
 		doInputFieldValidation();
 
 		// TODO Write logic for Sign In
+		
+		Intent intent = new Intent(this, MapActivity.class);
+		startActivity(intent);
 	}
 
 	private void doInputFieldValidation()
