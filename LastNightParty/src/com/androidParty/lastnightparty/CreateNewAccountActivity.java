@@ -4,6 +4,8 @@ import android.app.Activity;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.View;
+import android.widget.EditText;
 
 public class CreateNewAccountActivity extends Activity
 {
@@ -35,5 +37,36 @@ public class CreateNewAccountActivity extends Activity
 			return true;
 		}
 		return super.onOptionsItemSelected(item);
+	}
+
+	public void createAccount(View view)
+	{
+		doInputFieldValidation();
+
+		// TODO Write logic to create Account
+
+	}
+
+	private void doInputFieldValidation()
+	{
+		EditText firstName = (EditText) findViewById(R.id.first_name);
+		EditText lastName = (EditText) findViewById(R.id.last_name);
+		EditText emailAddress = (EditText) findViewById(R.id.email_address);
+		EditText password = (EditText) findViewById(R.id.new_account_pwd);
+
+		/*
+		 * Validation to verify the text field values are not null and Not
+		 * Empty.If Values are null or empty,then we will display an alert
+		 * dialog
+		 */
+		if (StringUtilities.isNullOrEmpty(firstName.getText().toString())
+				|| StringUtilities.isNullOrEmpty(lastName.getText().toString())
+				|| StringUtilities.isNullOrEmpty(emailAddress.getText()
+						.toString())
+				|| StringUtilities.isNullOrEmpty(password.getText().toString()))
+		{
+			UIUtility.showOkAlertDialog(this,
+					"First Name,Last Name,Email and Password is Mandatory");
+		}
 	}
 }

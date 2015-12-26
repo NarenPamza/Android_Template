@@ -4,6 +4,8 @@ import android.app.Activity;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.View;
+import android.widget.EditText;
 
 public class SignInActivity extends Activity
 {
@@ -35,5 +37,30 @@ public class SignInActivity extends Activity
 			return true;
 		}
 		return super.onOptionsItemSelected(item);
+	}
+
+	public void signIn(View view)
+	{
+		doInputFieldValidation();
+
+		// TODO Write logic for Sign In
+	}
+
+	private void doInputFieldValidation()
+	{
+		EditText userName = (EditText) findViewById(R.id.user_name);
+		EditText passWord = (EditText) findViewById(R.id.password);
+
+		/*
+		 * Validation to verify the user name and password field are not null
+		 * and Not Empty.If Values are null or empty,then we will display an
+		 * alert dialog
+		 */
+		if (StringUtilities.isNullOrEmpty(userName.getText().toString())
+				|| StringUtilities.isNullOrEmpty(passWord.getText().toString()))
+		{
+			UIUtility.showOkAlertDialog(this,
+					"User Name and Password is Mandatory");
+		}
 	}
 }

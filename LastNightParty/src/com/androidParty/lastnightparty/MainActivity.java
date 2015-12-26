@@ -2,10 +2,12 @@ package com.androidParty.lastnightparty;
 
 import android.app.Activity;
 import android.content.Intent;
+import android.graphics.Color;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
+import android.widget.TextView;
 
 public class MainActivity extends Activity
 {
@@ -15,6 +17,9 @@ public class MainActivity extends Activity
 	{
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_main);
+		TextView text = (TextView) findViewById(R.id.lastNight);
+		text.setTextColor(Color.BLUE);
+
 	}
 
 	@Override

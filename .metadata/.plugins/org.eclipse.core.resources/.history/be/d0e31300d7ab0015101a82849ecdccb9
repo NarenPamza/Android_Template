@@ -1,0 +1,27 @@
+package com.androidParty.lastnightparty;
+
+import android.app.Activity;
+import android.app.AlertDialog;
+import android.content.DialogInterface;
+
+public class UIUtility
+{
+  public static void showOkAlertDialog(Activity activity, String message)
+  {
+	  AlertDialog.Builder alertDialogBuilder = new AlertDialog.Builder(
+			  activity);
+		alertDialogBuilder
+				.setMessage("First Name,Last Name,Email and Password is Mandatory");
+		alertDialogBuilder.setPositiveButton("Ok",
+				new DialogInterface.OnClickListener()
+				{
+					@Override
+					public void onClick(DialogInterface dialog, int arg1)
+					{
+						dialog.cancel();
+					}
+				});
+		AlertDialog alertDialog = alertDialogBuilder.create();
+		alertDialog.show();
+  }
+}
